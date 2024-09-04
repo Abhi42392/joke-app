@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke app</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-box">
+            <% if(locals.joke){ %>
+                <p><%=joke%></p>
+            <% }else{ %>
+                <p><%=setup%></p>
+                <p><%=delivery%></p>
+            <%}%>
+        </div>
+        <div class="form-box">
+            <form action="/submit" method="post">
+                <div class="category">
+                    <label for="category">Category</label>
+                    <span class="select">
+                        <select id="category" name="category">
+                            <option>Any</option>
+                            <option>Programming</option>
+                            <option value="Miscellaneous">Misc</option>
+                            <option>Dark</option>
+                            <option>Pun</option>
+                            <option>Spooky</option>
+                            <option>Christmas</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="language">
+                    <label for="category">Language</label>
+                    <select class="select" id="language" name="lang">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="de">German</option>
+                        <option value="cs">Czech</option>
+                        <option value="fr">French</option>
+                        <option value="pt">Portuguese</option>
+                    </select>
+                </div>
+                <div class="main-box">
+                    <div class="blocklist">
+                        <label>Flags</label>
+                        <div class="cbox">
+                            <ul>
+                                <li><input type="checkbox" id="nsfw" name="flags" value="nsfw">
+                                <label for="nsfw">nsfw</label></li>
+                                <li><input type="checkbox" id="religious" name="flags" value="religious">
+                                <label for="religious">Music</label></li>
+                                <li><input type="checkbox" id="political" name="flags" value="political">
+                                <label for="political">Political</label></li>
+                                <li><input type="checkbox" id="racist" name="flags" value="racist">
+                                <label for="racist">Racist</label></li>
+                                <li><input type="checkbox" id="Sexist" name="flags" value="sexist">
+                                <label for="Sexist">Sexist</label></li>
+                                <li><input type="checkbox" id="explicit" name="flags" value="explicit">
+                                <label for="explicit">Explicit</label></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="main-right">
+                        <div class="joke-type">
+                            <label>Type</label>
+                            <div class="cbox">
+                                <ul>
+                                    <li><input type="checkbox" id="single" name="type" value="single">
+                                    <label for="single">Single</label></li>
+                                    <li><input type="checkbox" id="twopart" name="type" value="twopart">
+                                    <label for="twopart">Twopart</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="key-word">
+                            <label for="keyword">Key Word</label>
+                            <input type="text" id="keyword" name="keyword">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

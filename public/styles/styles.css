@@ -1,0 +1,122 @@
+*{
+    font-family: 'Poppins','sansserif';
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2A5E;
+}
+.container{
+    border-radius: 15px;
+}
+.joke-box{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 520px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+.form-box{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 520px;
+}
+label{
+    margin-bottom: 100px;
+}
+
+select {
+    border: none;        
+    outline: none;          
+    padding: 5px;
+    right: 50px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #508C9B;
+    color: #fff;
+}
+.cbox{
+    display: inline;
+    margin-right: 5px;
+    margin-left: 15px;
+    width: 150px;
+}
+.cbox ul{
+    list-style: none;
+    background-color: #508C9B;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 10px;
+}
+.cbox ul li{
+    margin: 3px 0;
+}
+.joke-type{
+    display: inline;
+    margin-top: 20px;
+}
+.blocklist{
+    margin-top: 20px;
+}
+
+
+.key-word input{
+    border: none;
+    outline: none;
+    background-color: #508C9B;
+    color: #fff;
+    padding: 5px;
+    display: block;
+    margin-top:13px ;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: #508C9B;
+    padding: 10px;
+    border-radius: 25px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 20px;
+    width: 100px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+button:hover{
+    filter: opacity(0.7);
+}
+.main-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.main-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    accent-color: #4CAF50;
+    cursor: pointer;
+    outline: none;
+}
